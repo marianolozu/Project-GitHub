@@ -4,10 +4,12 @@ abstract class Plantas {
 
     private String colorPetalo;
     private String tipoMaceta;
+    private String horasLuz;
 
-    public Plantas(String colorPetalo, String tipoMaceta) {
+    public Plantas(String colorPetalo, String tipoMaceta, String horasLuz) {
         this.colorPetalo = colorPetalo;
         this.tipoMaceta = tipoMaceta;
+        this.horasLuz = horasLuz;
     }
 
     public String getColorPetalo() {
@@ -24,6 +26,14 @@ abstract class Plantas {
 
     public void setTipoMaceta(String tipoMaceta) {
         this.tipoMaceta = tipoMaceta;
+    }
+
+    public String getHorasLuz() {
+        return horasLuz;
+    }
+
+    public void setHorasLuz(String horasLuz) {
+        this.horasLuz = horasLuz;
     }
 
 }
